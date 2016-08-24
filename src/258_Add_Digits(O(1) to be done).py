@@ -17,12 +17,13 @@ class Solution(object):
         :rtype: int
         """
         str_of_num = str(num)
-        while(len(str_of_num) > 1):
+        while (len(str_of_num) > 1):
             result = 0
             for letter in str_of_num:
                 result += int(letter)
             str_of_num = str(result)
         return int(str_of_num)
+
 
 # O(1) version
 class Solution1(object):
@@ -31,5 +32,3 @@ class Solution1(object):
         :type num: int
         :rtype: int
         """
-        
-        
